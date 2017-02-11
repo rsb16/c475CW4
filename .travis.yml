@@ -7,7 +7,8 @@ php:
   - hhvm
 script: phpunit Test.php
 after_success:
+  - cd PATH
   - git add .
   - git reset -- ./.travis.yml
   - git commit 
-  - git push -u origin master
+  - git push -u PATH/../origin master
