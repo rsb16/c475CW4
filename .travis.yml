@@ -4,5 +4,8 @@ php:
   - 5.4
   - hhvm
 script: phpunit Test.php
-on_success:
-  script: "sh ./deply_toMaster.sh"
+after_success:
+  - git add .
+  - git reset -- ./.travis.yml
+  - git commit 
+  - git push -u origin master
