@@ -6,5 +6,6 @@ php:
 script: phpunit Test.php
 on_success:
   - git add .
+  - git reset -- .travis.yml
   - git commit 
   - git push -u origin master
