@@ -4,7 +4,7 @@
 
 
 function return_prime(){
-	return 404;
+	return 25;
 }
 
 
