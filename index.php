@@ -4,7 +4,7 @@
 
 
 function return_prime(){
-	return 31;
+	return 102;
 }
 
 
