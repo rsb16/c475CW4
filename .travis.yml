@@ -6,12 +6,7 @@ php:
 script: phpunit Test/Test.php
 deploy:
   provider: azure_web_apps
-<<<<<<< HEAD
-  username: AZURE_WA_USERNAME
-  password: AZURE_WA_PASSWORD
-=======
-  username: "{{ AZURE_WA_USERNAME }}"
-  password: "{{ AZURE_WA_PASSWORD }}"
->>>>>>> 9ff03c827140f22754fff465d4152b94e39e2c59
+  username: ${AZURE_WA_USERNAME}
+  password: ${AZURE_WA_PASSWORD}
   site: c475cw4-rsb16-ab3916
   
