@@ -6,5 +6,4 @@ php:
 install: pip install -r requirements.txt
 script: phpunit Test/Test.php
 deploy:
-  skip_cleanup: true
-  app: http://c475cw4-rsb16-ab3916.azurewebsites.net/
+  provider: azure_web_apps
