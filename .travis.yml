@@ -6,11 +6,6 @@ php:
   - 5.4
   - hhvm
 script: phpunit Test.php
-after_success:
-  - cd PATH
-  - git init
-  - git remote add pb https://github.com/rsb16/c475CW4
-  - git add .
-  - git reset -- ./.travis.yml
-  - git commit 
-  - git push -u origin master
+deploy:
+  skip_cleanup: true
+  app: http://c475cw4-rsb16-ab3916.azurewebsites.net/
