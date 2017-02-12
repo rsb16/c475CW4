@@ -4,6 +4,7 @@ php:
   - 5.4
   - hhvm
 script: phpunit Test/Test.php
-deploy:
-  provider: azure_web_apps
+after_success:
+  deploy:
+    provider: azure_web_apps
   
