@@ -1,12 +1,10 @@
-language: 
-  - php
-  - git
+language: php
 php:
   - 5.5
   - 5.4
   - hhvm
 install: pip install -r requirements.txt
-script: phpunit src/Test.php
+script: phpunit Test/Test.php
 deploy:
   skip_cleanup: true
   app: http://c475cw4-rsb16-ab3916.azurewebsites.net/
