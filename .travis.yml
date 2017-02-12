@@ -3,7 +3,6 @@ php:
   - 5.5
   - 5.4
   - hhvm
-install: pip install -r requirements.txt
 script: phpunit Test/Test.php
 deploy:
   provider: azure_web_apps
